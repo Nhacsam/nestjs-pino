@@ -1158,8 +1158,8 @@
         "signature": "d5414de17cba48a4f692dab7b674a3f94f667f50b9bf4b7e375abd8ad49efc99"
       },
       "../src/pinologger.ts": {
-        "version": "1d6833efc3d109a6904f319298101b81d6a9d6cea94a7fc7b0ceeed40629dbaf",
-        "signature": "ae5158cfe6d4ff2f5608b60addac7a23f04e12c7d9ef2e27a9da492a92f9abad"
+        "version": "72e76d3f3966e3b632bba38596b864c296032cac4a3bbffdb7cedde7bd00d5ff",
+        "signature": "35a489435bb9df11059ecef2956e3c238dfb8be65bbe4cba9526554fca8ca79c"
       },
       "../src/injectpinologger.ts": {
         "version": "12fe7a5d0842d88d90a636495cd60f57beeac6486a6598d5f251b0cfc3f0a855",

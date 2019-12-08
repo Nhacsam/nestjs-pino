@@ -21,6 +21,6 @@ export declare class PinoLogger implements PinoMethods {
     fatal(obj: object, msg?: string, ...args: any[]): void;
     setContext(value: string): void;
     private call;
-    private get logger();
+    private getLogger;
 }
 export {};

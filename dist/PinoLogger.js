@@ -90,9 +90,9 @@ let PinoLogger = class PinoLogger {
                 args = [{ [this.contextKey]: context }, ...args];
             }
         }
-        this.logger[method](...args);
+        this.getLogger()[method](...args);
     }
-    get logger() {
+    getLogger() {
         return express_ctx_1.getValue(constants_1.LOGGER_KEY) || outOfContext;
     }
 };
