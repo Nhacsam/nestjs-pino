@@ -3,7 +3,7 @@ import { PinoLogger } from "./PinoLogger";
 
 @Injectable()
 export class Logger implements LoggerService {
-  private contextKey: string = "context";
+  private contextKey: string = "name";
 
   constructor(private readonly logger: PinoLogger) {}
 
