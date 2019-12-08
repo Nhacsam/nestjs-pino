@@ -1,6 +1,6 @@
 import { Module, DynamicModule } from "@nestjs/common";
 import { DestinationStream, LoggerOptions } from "pino";
-import { PassedLogger, LoggerModuleAsyncOptions, Params } from "./params";
+import { LoggerModuleAsyncOptions, Params } from "./params";
 import { LoggerCoreModule } from "./LoggerCoreModule";
 
 @Module({})

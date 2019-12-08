@@ -25,6 +25,7 @@ export function __resetOutOfContextForTests() {
 @Injectable({ scope: Scope.TRANSIENT })
 export class PinoLogger implements PinoMethods {
   private context = "";
+  private contextKey: string = "context";
 
   constructor(@Inject(OPTIONS_PROVIDER_TOKEN) options: Params) {
     if (!outOfContext) {
@@ -86,9 +87,12 @@ export class PinoLogger implements PinoMethods {
     if (context) {
       const firstArg = args[0];
       if (typeof firstArg === "object") {
-        args = [Object.assign({ context }, firstArg), ...args.slice(1)];
+        args = [
+          Object.assign({ [this.contextKey]: context }, firstArg),
+          ...args.slice(1)
+        ];
       } else {
-        args = [{ context }, ...args];
+        args = [{ [this.contextKey]: context }, ...args];
       }
     }
 
